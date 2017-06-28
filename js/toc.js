@@ -9,13 +9,13 @@ define(function (){
         $("#tocButton").click(function() {
             if ($("#toc").is(":hidden")) {
                 $("#tocButton").attr("value", valueHide);
-                $("#toc").slideDown(320);
-                $(".switch-btn, .switch-area").fadeOut(300);
+                $("#toc").fadeIn(320);
+                // $(".switch-btn, .switch-area").fadeOut(300);
             }
             else {
                 $("#tocButton").attr("value", valueShow);
-                $("#toc").slideUp(350);
-                $(".switch-btn, .switch-area").fadeIn(500);
+                $("#toc").fadeOut(350);
+                // $(".switch-btn, .switch-area").fadeIn(500);
             }
         })
     }()
